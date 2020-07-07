@@ -1,0 +1,65 @@
+.deal {
+  grid-column: center-start/ center-end;
+
+  display: grid;
+  row-gap: 4rem;
+
+  &__main-heading {
+    font-size: 6rem;
+    justify-self: center;
+  }
+
+  &__container{
+
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+
+    justify-items: right;
+    align-items: center;
+    text-align: left;
+
+    .container__image{
+
+    }
+    .container__heading{
+      justify-self: right;
+
+      &-title{
+        font-size: 50px;
+
+      }
+
+      &-price{
+        font-size: 25px;
+        list-style: none;
+        color: rgba($black, .2);
+
+      }
+
+      &-text{
+        text-decoration: none;
+        /*margin: 0 2rem;*/
+        font-size: 1.5rem;
+        color: rgba($black, .5);
+
+
+      }
+
+      &-list{
+        text-decoration: none;
+         margin: 0 2rem;
+        font-size: 1.5rem;
+        color: rgba($black, .5);
+      }
+
+      &-btn{
+        margin-top: 30px;
+
+      }
+
+
+    }
+
+  }
+
+}

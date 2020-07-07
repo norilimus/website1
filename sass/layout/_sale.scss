@@ -1,0 +1,32 @@
+.sale{
+  grid-column: full-start/ full-end;
+  background: url(../images/bg-promotion.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+
+  display: grid;
+
+  justify-items: right;
+  align-items: center;
+  text-align: center;
+
+
+  padding: 10rem;
+  border: .5rem solid $white;
+
+
+
+  &__main-heading{
+    font-size: 4rem;
+  }
+
+  &__main-heading-sub{
+    font-size: 2rem;
+  }
+
+  &__secondary-heading{
+    font-size: 8rem;
+
+  }
+}

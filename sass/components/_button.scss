@@ -1,0 +1,23 @@
+.btn {
+  height: 4rem;
+  width: 20rem;
+  border-radius: 20rem;
+  border: none;
+  font-family: $font-secondary;
+  text-transform: uppercase;
+  box-shadow: 0 .5rem 1rem rgba($black, .3);
+  transform: all .2s;
+
+  &-green{
+    background: $color-green-1;
+    color: $white;
+  }
+
+  &:hover{
+    cursor: pointer;
+    transform: translateY(-.3rem);
+    background: $color-green-2;
+  }
+
+}
+

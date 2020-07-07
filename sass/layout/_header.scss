@@ -1,0 +1,46 @@
+.header {
+  grid-column: full-start / full-end;
+  background: url(../images/bg-header.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+
+  padding: 5rem;
+
+  display: grid;
+  grid-template-columns: repeat(2, minmax(min-content, 1fr));
+  grid-template-rows:  min-content 1fr minmax(6rem, min-content) 1fr;
+
+  &__logo {
+    font-size: 6rem;
+    grid-column: 1 /span 1;
+    justify-self: flex-start;
+  }
+
+  &__heading-main{
+    font-size: 20rem;
+    grid-column: 1 / -1;
+    justify-self: center;
+    align-self: flex-end;
+  }
+
+  &__heading-secondary{
+    letter-spacing: .5rem;
+    text-transform: uppercase;
+    grid-column: 1 / -1;
+    justify-self: center;
+    align-self: center;
+
+  }
+
+  &__btn{
+    grid-column: 1/ -1;
+    justify-self: center;
+    align-self: flex-start;
+
+  }
+.active {
+  color: $color-green-1;
+}
+
+}

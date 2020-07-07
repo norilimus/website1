@@ -1,0 +1,63 @@
+//logo-text
+
+.logo-text {
+    font-family: $font-logo;
+  color: $white;
+}
+
+//headings
+
+.heading-1 {
+    font-family: $font-title;
+    color: $black;
+
+      &--white{
+        color: $white;
+      }
+}
+
+.heading-2 {
+    font-family: $font-primary;
+    color: $black;
+
+    &--light{
+      font-weight: 300;
+    }
+
+    &--med{
+      font-weight: 400;
+    }
+    &--bold{
+      font-weight: 600;
+    }
+    &--white{
+      color: $white;
+    }
+}
+
+//text on page
+
+.body-text {
+    font-family: $font-secondary;
+    color: $black;
+    &--light{
+      font-weight: 300;
+    }
+
+    &--med{
+      font-weight: 500;
+    }
+    &--bold{
+      font-weight: 700;
+    }
+    &--white{
+      color: $white;
+    }
+
+}
+
+//color
+
+.color-green{
+  color: rgba(68,189,50,1.0);;
+}

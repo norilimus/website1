@@ -1,0 +1,30 @@
+.caption{
+  grid-column: full-start/ full-end;
+  background: url(../images/bg-caption.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+
+  display: grid;
+
+  justify-items: center;
+  align-items: center;
+  text-align: center;
+
+
+  padding: 10rem;
+  border: .5rem solid $white;
+
+  outline: .5rem solid $white;
+  outline-offset: -8rem;
+
+  &__main-heading{
+    font-size: 8rem;
+    letter-spacing: .4rem;
+  }
+
+  &__secondary-heading{
+    font-size: 2rem;
+    text-transform: uppercase;
+  }
+}

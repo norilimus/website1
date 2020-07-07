@@ -1,0 +1,43 @@
+*,
+*::before,
+*::after {
+	padding: 0;
+	margin: 0;
+	box-sizing: inherit;
+}
+
+html {
+	font-size: 62.5%;
+
+	@include respond(tab-land) {
+		font-size: 56.25%;
+	}
+
+	@include respond(tab-port) {
+		font-size: 50%;
+	}
+
+	@include respond(big-desktop) {
+		font-size: 75%;
+	}
+}
+
+body {
+	box-sizing: border-box;
+}
+
+.container {
+	display: grid;
+	grid-template-columns: [full-start] minmax(6rem, 1fr)
+	[center-start] repeat(2, minmax(min-content, 60rem))
+	[center-end] minmax(6rem, 1fr) [full-end];
+	grid-template-rows: 100vh min-content;
+
+	&::selection,
+	::-moz-selection{
+		color: $white;
+		background: $color-green-1;
+	}
+
+
+}

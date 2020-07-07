@@ -1,0 +1,34 @@
+.header {
+
+  &__nav{
+
+    grid-column: 2/span 1;
+    justify-self: flex-end;
+    align-self: center;
+
+
+
+    &-items{
+      display: flex;
+      list-style: none;
+
+    }
+    &-links{
+      margin-left: 4rem;
+
+    }
+    &-link:link,
+    &-link:visited{
+      text-decoration: none;
+      font-size: 1.5rem;
+      color: $white;
+      font-family: $font-secondary;
+      transition: all .2s;
+
+      &:hover{
+        color: $color-green-1;
+      }
+
+    }
+  }
+}
